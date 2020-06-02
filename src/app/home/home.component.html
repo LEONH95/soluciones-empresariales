@@ -1,0 +1,15 @@
+<div class="pt-5">
+<div class="card">
+    <div class="card-body">
+        <h1>!Bienvenido {{currentUser.firstName}}!</h1>
+        <p>Pandel de Administración de Usuarios.</p>
+        <h3>Administrar Usuarios:</h3>
+        <ul>
+            <li *ngFor="let user of users">
+            {{user.username}} ({{user.firstName}} {{user.lastName}})
+            </li>
+        </ul>
+    </div>
+  </div>
+</div>
+
